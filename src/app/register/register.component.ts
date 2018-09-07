@@ -39,11 +39,11 @@ export class RegisterComponent implements OnInit {
     this.loading = true;
     this.authenticationService.register(this.f.username.value, this.f.email.value, this.f.password.value)
       .subscribe( data=> {
-          this.messageService.add("Registration Successfully!");
+          this.messageService.success("Registration Successfully!");
           this.router.navigate(['/login']);
       }, error => {
         this.error = error;
-        this.messageService.add(error);
+        this.messageService.error(error);
         this.loading = false;
       });
     

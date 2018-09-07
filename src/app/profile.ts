@@ -4,4 +4,5 @@ export class Profile {
     email: string;
     bio: string;
     image: string;
+    username: string;
 }

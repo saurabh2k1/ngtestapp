@@ -12,13 +12,7 @@ import { first } from 'rxjs/operators';
 export class ProfileComponent implements OnInit {
 
   profiles: Profile[] = [];
-  profile: Profile = {
-    id: 1,
-    name: 'Saurabh Sharma',
-    email: 'saurabh@petronetlng.com',
-    bio: 'I am programmer',
-    image: null
-  }
+
   constructor(private profileService: ProfileService) { }
 
   ngOnInit() {

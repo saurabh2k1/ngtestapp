@@ -26,7 +26,7 @@ export class ProfileService {
   ) { }
 
   private log(message: string) {
-    this.messageService.add(`ProfileService: ${message}`);
+    this.messageService.info(`ProfileService: ${message}`);
   }
 
   getProfiles() {
